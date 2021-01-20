@@ -4,13 +4,12 @@ require_once("pomm_conf.php");
 require_once("func.php");
 require_once("map_chinese.php");
 ?>
-<!-- <HTML><HEAD><title>泰坦魔兽</title> -->
+<!-- <HTML><HEAD><title>PlayerMap</title> -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <style type="text/css">
 <!--
 body
 {
-	zoom:1.1;
     margin-left: 0px;
     margin-top: 40px;
     margin-right: 0px;
