@@ -12,7 +12,7 @@ $maps_count = count($lang_defs['maps_names']);
 $Horde_races = 0x2B2;
 $Alliance_races = 0x44D;
 $outland_inst   = array(540,542,543,544,545,546,547,548,550,552,553,554,555,556,557,558,559,562,564,565);
-$northrend_inst = array(533,574,575,576,578,599,600,601,602,603,604,608,615,616,617,619,624);
+$northrend_inst = array(533,574,575,576,578,599,600,601,602,603,604,608,615,616,617,619,624,631,632,649,650,658,668,724);
 
 require_once "libs/js/JsHttpRequest/Php.php";
 $JsHttpRequest = new Subsys_JsHttpRequest_Php("utf-8");
