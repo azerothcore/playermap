@@ -11,13 +11,17 @@ $realm_id = 1; // Set the realm_id
 
 $server_arr = $server;
 
-if (isset($_COOKIE["lang"])) {
-    $lang = "en";
-    if (!file_exists("map_".$lang.".php") && !file_exists("zone_names_".$lang.".php")) {
-        $lang = $language;
-    }
-} else {
-    $lang = $language;
+$lang = $language;
+
+// Optional per-visitor override, restricted to a plain language name so the
+// value can never escape this directory when it is used in an include below.
+if (isset($_COOKIE["lang"]) && preg_match('/^[a-z]+$/', $_COOKIE["lang"])) {
+    $lang = $_COOKIE["lang"];
+}
+
+// Fall back to english if the requested language is not shipped.
+if (!file_exists("map_".$lang.".php") || !file_exists("zone_names_".$lang.".php")) {
+    $lang = "english";
 }
 
 

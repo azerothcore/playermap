@@ -12,6 +12,13 @@ Open **pomm_conf.php** and set the **realmd_id**.
 
 Done!
 
+## Language
+
+Set **$language** in **config/playermap_config.php** to one of the shipped languages:
+**english**, **german** or **chinese**. The value is the middle part of the matching
+`map_<language>.php` / `zone_names_<language>.php` file names, so adding a translation
+is a matter of dropping in that pair of files. Unknown values fall back to english.
+
 ## Credits
 
 - Dmitry Koterov (original author)
